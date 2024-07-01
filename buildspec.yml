@@ -13,7 +13,7 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: '/'
+  base-directory: 'build'
   discard-paths: yes
 
 
