@@ -2,17 +2,17 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: latest
-  build:
+    commands:
+      - echo "Nothing to install for a static site."
+  pre_build:
     commands:
       - echo Build started on `date`
-      - npm install
-      - npm run build
+  build:
+    commands:
       - echo Build completed on `date`
-
 artifacts:
   files:
     - '**/*'
-  base-directory: 'build'
+  base-directory: '.'
   discard-paths: yes
+
