@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "viewport" content= "width = device-width, initial-scale = 1.0 " >
+    <meta charset = "UTF-8">
+    <title> About </title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" id="csslink">
+</head>
+<body>
+    <section class = "banner_a" id = "sec">
+        <header>
+            <a href = "#" class = "logo"> <h1>About</h1></a>
+            <div id = "toggle" onclick="toggle ()"></div>
+        </header>
+        <div class = "content_about">
+            <div> <img width= "300" heigth="600"src="about.gif" alt=""></div>
+            <h2> Hello! <br> My name is <span> Nick Anaya </span> and... </h2>
+            <p>
+                I am a Computer Science student at Texas A&M University. I was born and raised in Peru, and then one day when I was 14 years old I moved to Houston, TX. I travel back and forth all the time so I feel like both places are home. 
+                <br> A fun fact about me is that growing up I wanted to be all of these things in order: </br> A fine art painter, a chef, a president, a singer, an architect, a film director and finally (and hopefully stays like that this time) a software engineer. I chose my major because it gives me the freedom to do whatever I want: I can make games or websites, do research on biological physics, or build a computer, make apps or work on prediction models that use A.I. 
+                <br> Some other fun facts about me that you might not care about but I’ll make you read anyways are: </br>
+                I love to sing, I love to read books of all kinds and write stories, I love to play video games, 
+                <br> and the most important thing: I love to just exist and experience life. </br>
+            </p>
+        </div>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href = "index.html"> Home </a></li>
+            <li><a href = "About.html"> About </a></li>
+            <li><a href = "Qualifications.html"> Qualifications </a></li>
+            <li><a href = "Portfolio.html"> Portfolio </a></li>
+            <li><a href = "Community.html"> Community </a></li>
+            <li><a href = "AI.html"> AI </a></li>
+            <li><button onclick="toggleStyleSheet()" type="button">Click Me!</button></li>
+        </ul>
+    </div>
+    <script type = "text/javascript">
+        function toggle() {
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script> 
+    <script src="ToggleFunction.js"></script>
+</body>
+</html>

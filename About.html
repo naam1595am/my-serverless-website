@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "viewport" content= "width = device-width, initial-scale = 1.0 " >
+    <meta charset = "UTF-8">
+    <title> About </title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" id="csslink">
+</head>
+<body>
+    <section class="banner_a" id="sec">
+        <header>
+          <a href="#" class="logo">
+            <h1>About</h1>
+          </a>
+          <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content_about">
+            <div class="text-container">
+              <h2>Hello! <br> My name is <span>Nick Anaya</span> and...</h2>
+              <p>
+                I am a fourth-year student at Texas A&M University, where I am working towards a Bachelor of Science in Computer Science. Awarded the NACME scholarship for academic excellence and leadership potential, I have benefitted from both significant financial support and professional growth opportunities offered through developmental seminars.
+                <br><br>
+                My academic pursuits and interests include software engineering, full-stack development, and artificial intelligence. My passion for uniting the creativity of art with the logic of science drives my ambition to develop innovative and user-friendly technological solutions.
+                <br><br>
+                I have worked as an intern at Hewlett Packard Enterprise in summer 2023 and contributed to web development and game design projects as a freelancer since 2016. Looking to the future, I intend to embrace a full-time role as a software engineer while continuing to engage in personal projects that enhance my abilities.
+              </p>
+            </div>
+            <div class="image-container">
+              <img src="about.jpg" alt="">
+            </div>
+          </div>
+      </section>
+    <div id="navigation">
+        <ul>
+            <li><a href = "index.html"> Home </a></li>
+            <li><a href = "About.html"> About </a></li>
+            <li><a href = "Qualifications.html"> Qualifications </a></li>
+            <li><a href = "Portfolio.html"> Portfolio </a></li>
+            <li><a href = "Community.html"> Community </a></li>
+            <li><a href = "AI.html"> AI </a></li>
+            <li><button onclick="toggleStyleSheet()" type="button">Click Me!</button></li>
+        </ul>
+    </div>
+    <script type = "text/javascript">
+        function toggle() {
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script> 
+    <script src="ToggleFunction.js"></script>
+</body>
+</html>

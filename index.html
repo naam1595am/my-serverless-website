@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "viewport" content= "width = device-width, initial-scale = 1.0 " >
+    <meta charset = "UTF-8">
+    <title> Home </title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" id="csslink">
+</head>
+<body>
+    <section class = "banner" id = "sec">
+        <header>
+            <a href = "#" class = "logo">   <h1>Home</h1></a>
+            <div id = "toggle" onclick="toggle ()"></div>
+        </header>
+        <div class = "content">
+            <div> <img width= "300" heigth="600"src="me.gif" alt=""></div>
+            <h2>Hello World, <br> I'm <span> Nick Anaya </span></h2>
+            <p>
+                Welcome to my digital corner! Here, you'll get a glimpse of who I am, my skills, accomplishments, and aspirations. Dive in to discover more about my journey and future ambitions. Thanks for stopping by!                <br>
+                <br>
+                “Somewhere, something incredible is waiting to be known.”
+                </br>
+                ― Carl Sagan
+                </br> 
+            </p>
+        </div>
+        <ul class = "sci">
+            <li><a href = "https://www.linkedin.com/in/nick-anaya/"><img src="linkedin.png" id = "lin" width="80" height="80"></a> </li>
+            <li><a href = "https://github.com/naam1595"><img src="github.png" id = "gh" width="71" height="71"></a></li>
+            <li><a href = "tel:346-520-3101"><img src="phone.png" id = "ph" width="85" height="85"></a></li>
+            <li><a href = "mailto:naam1595@gmail.com"><img src="email.png" id = "em" width="61" height="61"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href = "index.html"> Home </a></li>
+            <li><a href = "About.html"> About </a></li>
+            <li><a href = "Qualifications.html"> Qualifications </a></li>
+            <li><a href = "Portfolio.html"> Portfolio </a></li>
+            <li><a href = "Community.html"> Community </a></li>
+            <li><a href = "AI.html"> AI </a></li>
+            <li><button onclick="toggleStyleSheet()" type="button">Click Me!</button></li>
+        </ul>
+    </div>
+    <script type = "text/javascript">
+        function toggle() {
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script> 
+    <script src="ToggleFunction.js"></script>
+</body>
+</html>

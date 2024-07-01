@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "viewport" content=" width = device-width, initial-scale = 1.0 " >
+    <meta charset = "UTF-8">
+    <title> Community </title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" id="csslink">
+</head>
+<body>
+    <section class = "banner_a" id = "sec">
+        <header>
+            <a href = "#" class = "logo_c">   <h1>Community</h1></a>
+            <div id = "toggle" onclick="toggle ()"></div>
+        </header>
+        <div class = "content_c">
+            <div class = "ahic"> 
+                <div class = "card" id = "ahic_c">
+                    <h2> AHIC </h2>
+                    <img src="ahic.jpg" id = "ahic_img">
+                    <a href="https://www.ahic-tamu.org/officers">Know More</a>
+                </div>
+                <p>
+                    I'm an officer in the Academic Outreach deparment of AHIC.
+                    AHIC (Aggie Hispanics in Computing) is a Texas A&M University organization that is built on a community of university students who want to explore their interest in the field of technology 
+                    and empowering Latinx/Hispanics students to succeed in careers in computing. AHIC embraces the mission and goals of Hispanics in Computing. 
+                </p>
+            </div>
+
+            <div class = "rtapia">
+                <div class = "card" id = "rtapia_c"> 
+                    <h2> Richard Tapia Conference </h2>
+                    <img src="rtapia.jpg" id = "rtapia_img">
+                    <a href="https://tapiaconference.cmd-it.org/">Know More</a>
+                </div>
+                <p>
+                    I was recipient of the Richard Tapia 2022 Conference scholarship and I had the opportunity to represent Texas A&M University at the conference in Washington D.C. 
+                    I volunteered for a total of 12 hours and attended many of the talks where I learned many things about technology, inclusion and career paths.
+                </p>
+            </div>
+
+            <div class = "academy">
+                <div class = "card" id = "academy_c">
+                    <h2> TAMU Chevron Academy </h2>
+                    <img src="academy.jpg" id = "academy_img">
+                    <a href="https://www.chron.com/neighborhood/fortbend/news/article/Engineering-academy-provides-pathway-to-success-9712672.php">Know More</a>
+                </div>
+                <p>
+                    I was part of the first class of the Texas A&M Chevron Academy at Houston Community College. This opportunity opened the door for me to attend my dream school and get into my major.
+                    I met wonderful people and was part of many events that helped me get into the Aggie spirit and easily transition from a community college to a four year university.
+                </p>
+            </div>
+
+            <div class = "talent">
+                <div class = "card" id = "talent_c">
+                    <h2> HCC Global Luncheon </h2>
+                    <img src="talent.jpg" id = "talent_img">
+                    <a href="https://www.youtube.com/watch?v=0R4yCnNL5X4">Know More</a>
+                </div>
+                <p>
+                    I participated and won second place at the 2015 Houston Community College Global Talent Show, which got me a spot to sing in the Houston Community College Global Luncheon. 
+                    At the event, I was able to perform a Peruvian-folk song in front of embassadors of many countries. 
+                </p>
+            </div>
+        </div>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href = "index.html"> Home </a></li>
+            <li><a href = "About.html"> About </a></li>
+            <li><a href = "Qualifications.html"> Qualifications </a></li>
+            <li><a href = "Portfolio.html"> Portfolio </a></li>
+            <li><a href = "Community.html"> Community </a></li>
+            <li><a href = "AI.html"> AI </a></li>
+            <li><button onclick="toggleStyleSheet()" type="button">Click Me!</button></li>
+        </ul>
+    </div>
+    <script type = "text/javascript">
+        function toggle() {
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+    <script src="ToggleFunction.js"></script>
+</body>
+</html>

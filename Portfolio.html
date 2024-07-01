@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "viewport" content=" width = device-width, initial-scale = 1.0 " >
+    <meta charset = "UTF-8">
+    <title> Portfolio </title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" id="csslink">
+</head>
+<body>
+    <section class = "banner_a" id = "sec">
+        <header>
+            <a href = "#" class = "logo">   <h1>Portfolio</h1></a>
+            <div id = "toggle" onclick="toggle ()"></div>
+        </header>
+        <div class = "title"> <h2> Take a look at what I made: </h2></div>
+        <div class = "content_portfolio">
+            <div class="vida_2048">
+                <h2> Vida 2048 </h2>
+                <p>
+                    I made this game in C# using Unity3D. I worked on this project for 3 months in order to learn the inner workings of one of my favorite games at the time. 
+                    While making this game, I learned about arrays, data storage, language localization, and the process of publishing an app. 
+                    On the design end, I drew and animated all the characters as well as the UI features.
+                </p>
+                <iframe width="580" height="280" src="https://www.youtube.com/embed/sO79JUzPDVA" title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                <a href='https://play.google.com/store/apps/details?id=com.NNCStudios.Vida2048&hl=en_US&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                    <img width="200" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+                </a>
+            </div>
+
+            <div class = "linear_reg">
+                <h2 id ="linear"> Linear Regression Model </h2>
+                <p id="linearp">
+                    Gained technical and project based skills in coding and AI on topics including data sourcing, organizing, visualization, implementation, and evaluation. 
+                    Collaborated with peers on creating a linear regression model to answer: What is the relationship between college students' parents' income and how well they do in college?
+                </p>
+                <img src="FPLR.gif" width="540" height="280">
+                <a id = "git" href="https://www.canva.com/design/DAE96K1XOEc/pbcvN_hHDp6KT6nJILkf1w/view?utm_content=DAE96K1XOEc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+                ">Watch Me!
+                </a>
+                <a id = "gitlink" href='https://github.com/naam1595/ApplyAI'>
+                    GitHub
+                </a>
+            </div>
+
+            <div class = "vending_mac">
+                <h2 id ="vending"> Vending Machine </h2>
+                <p id="vending_p">
+                    I made this vending machine simulation in my CSCE 314 (Progamming Languages) class. For this project I used Java's Queue Interface 
+                    to store various objects that represent possible items in the vending machine. I also implemented the logic that would delay the complete depletion of a single slot
+                    in order to preserve the appearance of a fully stocked vending machine. For the UI design, I used JavaFX and SceneBuilder.
+                </p>
+                <img src="vending.gif" width="440" height="540">
+            </div>
+
+        </div>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href = "index.html"> Home </a></li>
+            <li><a href = "About.html"> About </a></li>
+            <li><a href = "Qualifications.html"> Qualifications </a></li>
+            <li><a href = "Portfolio.html"> Portfolio </a></li>
+            <li><a href = "Community.html"> Community </a></li>
+            <li><a href = "AI.html"> AI </a></li>
+            <li><button onclick="toggleStyleSheet()" type="button">Click Me!</button></li>
+        </ul>
+    </div>
+    <script type = "text/javascript">
+        function toggle() {
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+    <script src="ToggleFunction.js"></script>
+</body>
+
+</html>

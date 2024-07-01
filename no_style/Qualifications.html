@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "viewport" content=" width = device-width, initial-scale = 1.0 " >
+    <meta charset = "UTF-8">
+    <title> Qualifications </title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" id="csslink">
+</head>
+<body>
+    <section class = "banner_a" id = "sec">
+        <header>
+            <a href = "#" class = "logo_q"><h1>Qualifications</h1></a>
+            <div id = "toggle" onclick="toggle ()"></div>
+        </header>
+
+        <div class = "content_q">
+            <div class = "static-txt"> I'm a </div>
+            <ul class = "dynamic-txt">
+                <li><span>Student</span></li>
+                <li><span>Freelancer</span></li>
+                <li><span>Medical Interpreter</span></li>
+                <li><span>QA Supervisor</span></li>
+                <li><span>Research Assistant</span></li>
+            </ul>
+        </div>
+
+        <div class =  "resume">
+            <a href='Nick_Anaya_Resume.pdf'>
+                <img width="200" src='Nick_Anaya_Resume.jpg'/>
+            </a>
+        </div>
+        
+        <div class =  "skills">
+            <img width="200" src='skills.png'/>
+        </div>
+
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href = "index.html"> Home </a></li>
+            <li><a href = "About.html"> About </a></li>
+            <li><a href = "Qualifications.html"> Qualifications </a></li>
+            <li><a href = "Portfolio.html"> Portfolio </a></li>
+            <li><a href = "Community.html"> Community </a></li>
+            <li><a href = "AI.html"> AI </a></li>
+            <li><button onclick="toggleStyleSheet()" type="button">Click Me!</button></li>
+        </ul>
+    </div>
+    <script type = "text/javascript">
+        function toggle() {
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+    <script src="ToggleFunction.js"></script>
+</body>
+</html>
